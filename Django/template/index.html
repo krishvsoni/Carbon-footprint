@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Carbon Footprint</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container">
+              <a class="navbar-brand" href="#">C=C</a>
+            </div>
+          </nav>
+          <div class="card text-center mt-5">
+            <div class="card-body  m-1">
+             <h6> Text </h6>
+            </div>
+        </div>
+        <div class="card  mt-5">
+            <h5 class="card-header">cloud</h5>
+            <div class="card-body  mt-3">
+                <form method="PUT">
+                    {% csrf_token %}
+                    <div class="form-row">
+                      <div class="col">
+
+                        <input  name="latitude" id="latitude" required type="text" class="form-control p-3" placeholder="Enter Instance">
+                      </div>
+                      
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4">Calculate Carbon Footprint</button>
+                  </form>
+            </div>
+        </div>
+   
+        
+        <div class="card  mt-5",method="GET">
+            <div class="card-body  m-2">
+             
+   
+    <p><strong>Total CO2E:</strong> {{ response.total_co2e }}</p>
+    <p><strong>Total CO2E Unit:</strong> {{ response.total_co2e_unit }}</p>
+
+</div>
+        </div>
+      
+
+    </div>
+
+    
+
+
+</body>
+</html>
