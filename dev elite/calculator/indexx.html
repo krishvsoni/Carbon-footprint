@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carbon Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Carbon Calculator</h1>
+      <form id="carbon-form">
+        <label for="num-users">Number of users:</label>
+        <input type="number" id="num-users" name="num-users" required>
+        <label for="hours-per-day">Hours per day:</label>
+        <input type="number" id="hours-per-day" name="hours-per-day" required>
+        <label for="days-per-week">Days per week:</label>
+        <input type="number" id="days-per-week" name="days-per-week" required>
+        <label for="num-servers">Number of servers:</label>
+        <input type="number" id="num-servers" name="num-servers" required>
+        <label for="watts-per-server">Watts per server:</label>
+        <input type="number" id="watts-per-server" name="watts-per-server" required>
+        <label for="carbon-intensity">Carbon intensity (kgCO2e/kWh):</label>
+        <input type="number" step="0.01" id="carbon-intensity" name="carbon-intensity" required>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="results"></div>
+    </div>
+    <script src="indexxx.js"></script>
+  </body>
+</html>
