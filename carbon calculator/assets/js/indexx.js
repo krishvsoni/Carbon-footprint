@@ -1,6 +1,5 @@
 const carbonForm = document.querySelector('#carbon-form');
 const resultsDiv = document.querySelector('#results');
-
 carbonForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
